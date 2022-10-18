@@ -1,0 +1,7 @@
+{
+  "name": "ui-scss",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/ui/scss/src",
+  "projectType": "library",
+  "tags": []
+}

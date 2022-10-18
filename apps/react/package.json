@@ -1,0 +1,23 @@
+{
+  "name": "react",
+  "main": "src/app.ts",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@nativescript/core": "*",
+    "@nativescript/tailwind": "*",
+    "react": "*",
+    "react-nativescript": "*",
+    "react-nativescript-navigation": "*"
+  },
+  "devDependencies": {
+    "@nativescript/android": "8.3.1",
+    "@nativescript/ios": "8.3.3",
+    "@types/react": "npm:types-react-without-jsx-intrinsics@^16.14.30"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit"
+  },
+  "gitHead": "1350d382fb4b0ed4c6e9685df909518b2688e004",
+  "readme": "NativeScript Application"
+}

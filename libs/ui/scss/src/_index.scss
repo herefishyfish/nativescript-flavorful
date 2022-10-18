@@ -1,0 +1,13 @@
+
+
+.btn {
+  @apply text-lg font-bold px-4;
+}
+
+.btn-rounded {
+  @apply rounded-full;
+}
+
+.btn-primary {
+  @apply bg-primary text-white;
+}

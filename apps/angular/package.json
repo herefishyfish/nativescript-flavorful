@@ -1,0 +1,17 @@
+{
+  "name": "angular",
+  "main": "./src/main.ts",
+  "license": "SEE LICENSE IN <your-license-filename>",
+  "version": "0.0.0",
+  "scripts": {
+    "postinstall": "node ./tools/postinstall.js"
+  },
+  "dependencies": {
+    "@nativescript/core": "*",
+    "@nativescript/tailwind": "file:../../node_modules/@nativescript/tailwind"
+  },
+  "devDependencies": {
+    "@nativescript/android": "~8.3.1",
+    "@nativescript/ios": "~8.3.3"
+  }
+}
