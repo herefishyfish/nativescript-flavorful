@@ -21,7 +21,7 @@ export function ScreenOne({ navigation }: ScreenOneProps) {
                 &#xf135; You're viewing screen one!
             </label>
             <button
-                className="btn btn-primary btn-rounded border-8"
+                className="btn btn-primary rounded-full border-8"
                 onTap={() => Dialogs.alert("Tapped!")}
             >
                 SO MUCH FLAVOR!

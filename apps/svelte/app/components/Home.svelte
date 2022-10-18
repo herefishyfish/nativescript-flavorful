@@ -8,7 +8,7 @@
             </formattedString>
         </label>
         <button
-          class="btn btn-primary btn-rounded border-8"
+          class="btn btn-primary rounded-full border-8"
           borderColor="{color}"
           text="SO MUCH FLAVOR!"
         ></button>

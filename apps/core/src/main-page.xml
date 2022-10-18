@@ -26,7 +26,7 @@ https://docs.nativescript.org/ui/components.
     -->
     <StackLayout class="p-20">
         <Label text="Tap the button" class="h1 text-center text-primary "/>
-        <Button text="TAP" borderColor="{{ color }}" tap="{{ onTap }}" class="btn btn-primary btn-rounded border-8"/>
+        <Button text="TAP" borderColor="{{ color }}" tap="{{ onTap }}" class="btn btn-primary rounded-full border-8"/>
         <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
     </StackLayout>
 </Page>
