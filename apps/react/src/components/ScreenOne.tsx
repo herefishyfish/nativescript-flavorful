@@ -22,13 +22,11 @@ export function ScreenOne({ navigation }: ScreenOneProps) {
             </label>
             <button
                 className="btn btn-primary btn-rounded border-8"
-                style={styles.button}
                 onTap={() => Dialogs.alert("Tapped!")}
             >
-                Tap me for an alert
+                SO MUCH FLAVOR!
             </button>
             <button
-                style={styles.button}
                 onTap={() => navigation.navigate("Two", { message: "Hello, world!" })}
             >
                 Go to next screen
@@ -46,9 +44,5 @@ const styles = StyleSheet.create({
     text: {
         textAlignment: "center",
         fontSize: 24,
-    },
-    button: {
-        fontSize: 24,
-        color: "#2e6ddf",
     },
 });
