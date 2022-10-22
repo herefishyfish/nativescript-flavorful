@@ -1,0 +1,17 @@
+
+.fd-card {
+  background-color: rgb(241, 241, 241);
+  height: 100;
+  width: 100;
+  border-radius: 4;
+  margin-bottom: 4;
+  padding: 10;
+}
+
+.btn {
+  @apply text-lg font-bold px-4;
+}
+
+.btn-primary {
+  @apply bg-primary text-white;
+}

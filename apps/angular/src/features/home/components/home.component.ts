@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { setStatusBarColor } from '../../../utils';
-import { getMinimumCycleCount, RGB2Color, getColor } from '@flavorful/ui/core';
+import { getMinimumCycleCount, RGB2Color, getColor } from '@flavorful/core';
 
 @Component({
   moduleId: module.id,

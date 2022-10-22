@@ -1,0 +1,4 @@
+<% moduleExports.forEach(function(moduleExport){ %>
+export { default as <%= moduleExport.names.className %> } from '<%= moduleExport.path %>';
+export * from '<%= moduleExport.path %>';
+<% }); %>

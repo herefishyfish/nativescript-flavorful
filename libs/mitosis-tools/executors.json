@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "executors": {
+    "compile": {
+      "implementation": "./src/executors/compile/index.ts",
+      "schema": "./src/executors/compile/schema.json",
+      "description": "Compiles component to the specified target(s)"
+    },
+    "compile-shared": {
+      "implementation": "./src/executors/compile-shared/index.ts",
+      "schema": "./src/executors/compile/schema.json",
+      "description": "Compiles shared module to the specified target(s)"
+    }
+  }
+}

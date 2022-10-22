@@ -3,6 +3,8 @@
   "compilerOptions": {
     "rootDir": ".",
     "sourceMap": true,
+    "jsx": "preserve",
+    "jsxImportSource": "@builder.io/mitosis",
     "declaration": false,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
@@ -15,7 +17,23 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@flavorful/ui/core": ["libs/ui/core/src/index.ts"]
+      "@flavorful/angular/button": ["libs/angular/button/index.ts"],
+      "@flavorful/angular/card": ["libs/angular/card/index.ts"],
+      "@flavorful/angular/shared": ["libs/angular/shared/index.ts"],
+      "@flavorful/mitosis-tools": ["libs/mitosis-tools/src/index.ts"],
+      "@flavorful/mitosis/button": ["libs/mitosis/button/index.ts"],
+      "@flavorful/mitosis/card": ["libs/mitosis/card/src/index.ts"],
+      "@flavorful/mitosis/shared": ["libs/mitosis/shared/src/index.ts"],
+      "@flavorful/react/button": ["libs/react/button/index.ts"],
+      "@flavorful/react/card": ["libs/react/card/index.ts"],
+      "@flavorful/react/shared": ["libs/react/shared/index.ts"],
+      "@flavorful/scss": ["libs/scss/src"],
+      "@flavorful/core": ["libs/core/src"],
+      "@flavorful/svelte/button": ["libs/svelte/button/index.ts"],
+      "@flavorful/svelte/card": ["libs/svelte/card/index.ts"],
+      "@flavorful/svelte/shared": ["libs/svelte/shared/index.ts"],
+      "@flavorful/vue/button": ["libs/vue/button/index.ts"],
+      "@flavorful/vue/shared": ["libs/vue/shared/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

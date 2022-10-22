@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "cli": "nx",
+  "$id": "compile-component",
+  "type": "object",
+  "properties": {
+    "targetFrameworks": {
+      "type": "array",
+      "enum": [
+        "angular",
+        "react",
+        "wc"
+      ],
+      "description": "The target to compile the component for"
+    },
+    "componentName": {
+      "type": "string",
+      "description": "The name of the project, where component is"
+    }
+  }
+}

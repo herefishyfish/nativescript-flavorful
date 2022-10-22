@@ -1,0 +1,43 @@
+{
+  "name": "mitosis-tools",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/mitosis-tools/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/libs/mitosis-tools",
+        "main": "libs/mitosis-tools/src/index.ts",
+        "tsConfig": "libs/mitosis-tools/tsconfig.lib.json",
+        "assets": [
+          "libs/mitosis-tools/*.md",
+          {
+            "input": "./libs/mitosis-tools/src",
+            "glob": "**/!(*.ts)",
+            "output": "./src"
+          },
+          {
+            "input": "./libs/mitosis-tools/src",
+            "glob": "**/*.d.ts",
+            "output": "./src"
+          },
+          {
+            "input": "./libs/mitosis-tools",
+            "glob": "generators.json",
+            "output": "."
+          },
+          {
+            "input": "./libs/mitosis-tools",
+            "glob": "executors.json",
+            "output": "."
+          }
+        ]
+      }
+    }
+  },
+  "tags": []
+}

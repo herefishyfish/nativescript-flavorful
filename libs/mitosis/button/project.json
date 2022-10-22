@@ -1,0 +1,36 @@
+{
+  "name": "mitosis-button",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/mitosis/button",
+  "projectType": "library",
+  "targets": {
+    "compile": {
+      "executor": "@flavorful/mitosis-tools:compile",
+      "outputs": [
+        "libs/angular/button",
+        "libs/react/button",
+        "libs/svelte/button"
+      ],
+      "options": {
+        "components": [
+          "./button.component.tsx"
+        ],
+        "assets": [
+          "./button.component.css"
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "libs/mitosis/button/**/*.ts"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

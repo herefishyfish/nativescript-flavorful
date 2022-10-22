@@ -10,10 +10,10 @@ module.exports = (env) => {
   webpack.chainWebpack((config) => {
     config.resolve.alias.set(
       '@flavorful/ui/scss',
-      resolve(__dirname, '../../libs/ui/scss/src')
+      resolve(__dirname, '../../libs/scss/src')
     );
     config.resolve.alias.set(
-      '@flavorful/ui/core',
+      '@flavorful/core',
       resolve(__dirname, '../../libs/ui/core/src')
     );
   });

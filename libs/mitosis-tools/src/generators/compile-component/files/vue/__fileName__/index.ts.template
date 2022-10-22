@@ -1,0 +1,3 @@
+<% moduleExports.forEach(function(moduleExport){ %>
+export * from '<%= moduleExport.path %>';
+<% }); %>

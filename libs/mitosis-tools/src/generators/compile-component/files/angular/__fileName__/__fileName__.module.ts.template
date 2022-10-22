@@ -1,0 +1,30 @@
+import { NgModule, NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { CommonModule } from '@angular/common';
+<% moduleExports.forEach(function(moduleExport){ %>
+import { <%= moduleExport.names.className %> } from '<%= moduleExport.path %>';<% }); %>
+
+<% if(controlValueAccessor) { %>
+import { CvaModule } from '@flavorful/angular/cva';<% } %>
+
+<% uses.forEach(use => { %>
+import { <%= use.className %>Module } from '<%= use.path %>';<% }); %>
+
+@NgModule({
+  imports: [
+    CommonModule,
+<% if(controlValueAccessor) { %>CvaModule,<% } %>
+<% uses.forEach(use => { %>
+    <%= use.className %>Module,<% }); %>
+  ],
+  declarations: [
+  <% moduleExports.forEach(function(moduleExport){ %>
+  <%= moduleExport.names.className %>,<% }); %>
+  ],
+  exports: [
+  <% moduleExports.forEach(function(moduleExport){ %>
+  <%= moduleExport.names.className %>,<% }); %>
+<% if(controlValueAccessor) { %>CvaModule,<% } %>
+  ],
+  schemas: [NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA]
+})
+export class <%= className %>Module {}

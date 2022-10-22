@@ -5,7 +5,8 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "mitosis:build": "nx run-many --target=compile --all"
   },
   "private": true,
   "dependencies": {
@@ -17,6 +18,9 @@
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
+    "@builder.io/eslint-plugin-mitosis": "^0.0.10",
+    "@builder.io/mitosis": "^0.0.74",
+    "@builder.io/mitosis-cli": "^0.0.33",
     "@nativescript/angular": "^14.0.0",
     "@nativescript/core": "~8.2.0",
     "@nativescript/tailwind": "^2.0.1",
@@ -50,12 +54,14 @@
     "@typescript-eslint/parser": "^5.36.1",
     "eslint": "~8.15.0",
     "eslint-config-prettier": "8.1.0",
+    "cheerio": "^1.0.0-rc.12",
     "jest": "28.1.1",
     "jest-environment-jsdom": "28.1.1",
     "nativescript-vue-template-compiler": "~2.9.0",
     "nx": "15.0.0",
     "prettier": "^2.6.2",
     "sass": "^1.32.0",
+    "gluegun": "^5.1.2",
     "svelte": "~3.44.0",
     "svelte-loader": "^3.1.2",
     "svelte-native-preprocessor": "^1.0.0",

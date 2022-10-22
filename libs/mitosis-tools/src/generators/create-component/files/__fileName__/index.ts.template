@@ -1,0 +1,4 @@
+export {
+  default as <%= className %>
+} from './<%= fileName %>.component';
+export * from './<%= fileName %>.component';

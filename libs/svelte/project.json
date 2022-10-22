@@ -1,0 +1,35 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/svelte",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/svelte",
+        "tsConfig": "libs/svelte/tsconfig.lib.json",
+        "project": "libs/svelte/package.json",
+        "entryFile": "libs/svelte/index.ts",
+        "external": [],
+        "rollupConfig": "@nrwl/svelte/plugins/bundle-rollup",
+        "compiler": "babel",
+        "assets": [
+          {
+            "glob": "libs/svelte/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/svelte/**/*.{ts,svelte}"]
+      }
+    }
+  }
+}

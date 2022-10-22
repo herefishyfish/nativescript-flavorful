@@ -1,0 +1,24 @@
+{
+  "name": "mitosis-card",
+  "sourceRoot": "libs/mitosis/card",
+  "projectType": "library",
+  "targets": {
+    "compile": {
+      "executor": "@flavorful/mitosis-tools:compile",
+      "outputs": [
+        "libs/angular/card",
+        "libs/svelte/card",
+        "libs/react/card"
+      ],
+      "options": {
+        "components": [
+          "./card.component.tsx"
+        ],
+        "assets": [
+          "./card.component.css"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

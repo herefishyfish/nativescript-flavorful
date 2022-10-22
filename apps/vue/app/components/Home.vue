@@ -22,7 +22,7 @@
 
 <script lang="ts">
   import Vue from "nativescript-vue";
-  import { getColor, getMinimumCycleCount } from '@flavorful/ui/core';
+  import { getColor, getMinimumCycleCount } from '@flavorful/core';
 
   export default Vue.extend({
     computed: {

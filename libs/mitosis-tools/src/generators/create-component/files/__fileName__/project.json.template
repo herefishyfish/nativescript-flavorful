@@ -1,0 +1,20 @@
+{
+  "sourceRoot": "libs/mitosis/<%= fileName %>",
+  "projectType": "library",
+  "targets": {
+    "compile": {
+      "executor": "@flavorful-mitosis/mitosis-tools:compile",
+      "outputs": [
+        "libs/angular/<%= fileName %>",
+        "libs/react/<%= fileName %>"
+      ],
+      "options": {
+        "components": ["./<%= fileName %>.component.tsx"],
+        "assets": [
+          "./<%= fileName %>.component.css"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

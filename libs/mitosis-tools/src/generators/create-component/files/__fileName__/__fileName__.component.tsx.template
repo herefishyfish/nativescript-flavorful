@@ -1,0 +1,10 @@
+import {useMetadata, useStore} from "@builder.io/mitosis";
+
+export type <%= className %>Props = {};
+
+useMetadata({
+  styleUrls: ['./<%= fileName %>.component.css']
+})
+export default function <%= className %>(props: <%= className %>Props) {
+  return <></>;
+}

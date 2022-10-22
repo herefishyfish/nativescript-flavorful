@@ -1,0 +1,24 @@
+{
+  "extends": ["../../.eslintrc.json", "plugin:@builder.io/mitosis/recommended"],
+  "ignorePatterns": ["!**/*"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["@builder.io/mitosis"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {}
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {}
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "rules": {}
+    }
+  ]
+}

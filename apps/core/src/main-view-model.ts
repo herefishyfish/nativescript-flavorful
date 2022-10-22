@@ -1,4 +1,4 @@
-import { getMinimumCycleCount, getColor } from '@flavorful/ui/core';
+import { getMinimumCycleCount, getColor } from '@flavorful/core';
 import { Observable } from '@nativescript/core';
 
 export class HelloWorldModel extends Observable {

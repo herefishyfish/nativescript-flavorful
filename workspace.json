@@ -1,0 +1,19 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "angular": "apps/angular",
+    "angular-ui": "libs/angular",
+    "mitosis-button": "libs/mitosis/button",
+    "mitosis-card": "libs/mitosis/card",
+    "mitosis-shared": "libs/mitosis/shared",
+    "mitosis-tools": "libs/mitosis-tools",
+    "react": "apps/react",
+    "react-ui": "libs/react",
+    "scss": "libs/scss",
+    "svelte": "apps/svelte",
+    "svelte-ui": "libs/svelte",
+    "vue": "apps/vue",
+    "vue-ui": "libs/vue"
+  }
+}

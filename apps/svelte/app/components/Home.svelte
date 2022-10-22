@@ -16,7 +16,7 @@
 </page>
 
 <script lang="ts">
-    import { getMinimumCycleCount, getColor } from '@flavorful/ui/core';
+    import { getMinimumCycleCount, getColor } from '@flavorful/core';
 
     let message: string = "Blank Svelte Native App"
     let phaseCount: number = 0;
